@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Winelist - Carta de Vinos</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="author" content="TemplatesJungle">
+  <meta name="keywords" content="vino,menu,restaurante">
+  <meta name="description" content="Carta interactiva de vinos">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="homepage">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="m14.478 1.5l.5-.033a.5.5 0 0 0-.871-.301l.371.334Zm-.498 2.959a.5.5 0 1 0-1 0h1Zm-6.49.082h-.5h.5Zm0 .959h.5h-.5Zm-6.99 7V12a.5.5 0 0 0-.278.916L.5 12.5Zm.998-11l.469-.175a.5.5 0 0 0-.916-.048l.447.223Zm3.994 9l.354.353a.5.5 0 0 0-.195-.827l-.159.474Zm7.224-8.027l-.37.336l.18.199l.265-.04l-.075-.495Zm1.264-.94c.051.778.003 1.25-.123 1.606c-.122.345-.336.629-.723 1l.692.722c.438-.42.776-.832.974-1.388c.193-.546.232-1.178.177-2.006l-.998.066Zm0 3.654V4.46h-1v.728h1Zm-6.99-.646V5.5h1v-.959h-1Zm0 .959V6h1v-.5h-1ZM10.525 1a3.539 3.539 0 0 0-3.537 3.541h1A2.539 2.539 0 0 1 10.526 2V1Zm2.454 4.187C12.98 9.503 9.487 13 5.18 13v1c4.86 0 8.8-3.946 8.8-8.813h-1ZM1.03 1.675C1.574 3.127 3.614 6 7.49 6V5C4.174 5 2.421 2.54 1.966 1.325l-.937.35Zm.021-.398C.004 3.373-.157 5.407.604 7.139c.759 1.727 2.392 3.055 4.73 3.835l.317-.948c-2.155-.72-3.518-1.892-4.132-3.29c-.612-1.393-.523-3.11.427-5.013l-.895-.446Zm4.087 8.87C4.536 10.75 2.726 12 .5 12v1c2.566 0 4.617-1.416 5.346-2.147l-.708-.706Zm7.949-8.009A3.445 3.445 0 0 0 10.526 1v1c.721 0 1.37.311 1.82.809l.74-.671Zm-.296.83a3.513 3.513 0 0 0 2.06-1.134l-.744-.668a2.514 2.514 0 0 1-1.466.813l.15.989ZM.222 12.916C1.863 14.01 3.583 14 5.18 14v-1c-1.63 0-3.048-.011-4.402-.916l-.556.832Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="pinterest" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="m4.5 13.5l3-7m-3.236 3a2.989 2.989 0 0 1-.764-2V7A3.5 3.5 0 0 1 7 3.5h1A3.5 3.5 0 0 1 11.5 7v.5a3 3 0 0 1-3 3a2.081 2.081 0 0 1-1.974-1.423L6.5 9m1 5.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="m1.61 12.738l-.104.489l.105-.489Zm11.78 0l.104.489l-.105-.489Zm0-10.476l.104-.489l-.105.489Zm-11.78 0l.106.489l-.105-.489ZM6.5 5.5l.277-.416A.5.5 0 0 0 6 5.5h.5Zm0 4H6a.5.5 0 0 0 .777.416L6.5 9.5Zm3-2l.277.416a.5.5 0 0 0 0-.832L9.5 7.5ZM0 3.636v7.728h1V3.636H0Zm15 7.728V3.636h-1v7.728h1ZM1.506 13.227c3.951.847 8.037.847 11.988 0l-.21-.978a27.605 27.605 0 0 1-11.568 0l-.21.978ZM13.494 1.773a28.606 28.606 0 0 0-11.988 0l.21.978a27.607 27.607 0 0 1 11.568 0l.21-.978ZM15 3.636c0-.898-.628-1.675-1.506-1.863l-.21.978c.418.09.716.458.716.885h1Zm-1 7.728a.905.905 0 0 1-.716.885l.21.978A1.905 1.905 0 0 0 15 11.364h-1Zm-14 0c0 .898.628 1.675 1.506 1.863l.21-.978A.905.905 0 0 1 1 11.364H0Zm1-7.728c0-.427.298-.796.716-.885l-.21-.978A1.905 1.905 0 0 0 0 3.636h1ZM6 5.5v4h1v-4H6Zm.777 4.416l3-2l-.554-.832l-3 2l.554.832Zm3-2.832l-3-2l-.554.832l3 2l.554-.832Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="dribble" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          d="M4.839 1.024c3.346 4.041 5.096 7.922 5.704 12.782M.533 6.82c5.985-.138 9.402-1.083 11.97-4.216M2.7 12.594c3.221-4.902 7.171-5.65 11.755-4.293M14.5 7.5a7 7 0 1 0-14 0a7 7 0 0 0 14 0Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <rect width="20" height="18" x="2" y="4" rx="4" />
+          <path d="M8 2v4m8-4v4M2 10h20" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-bag" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path
+            d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16l.803-10Z" />
+          <path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="gift" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <rect width="18" height="14" x="3" y="8" rx="2" />
+          <path d="M12 5a3 3 0 1 0-3 3m6 0a3 3 0 1 0-3-3m0 0v17m9-7H3" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-cycle" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path
+            d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.806 2C16.209 2 19.76 4.335 21 8" />
+          <path d="m7 17l-4-1l-1 4M17 7l4 1l1-4" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M17 11H9.41l3.3-3.29a1 1 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L9.41 13H17a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd">
+          <path
+            d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+          <path fill="currentColor"
+            d="M5.669 4.76a1.469 1.469 0 0 1 2.04-1.177c1.062.454 3.442 1.533 6.462 3.276c3.021 1.744 5.146 3.267 6.069 3.958c.788.591.79 1.763.001 2.356c-.914.687-3.013 2.19-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28c-.906.387-1.92-.2-2.038-1.177c-.138-1.142-.396-3.735-.396-7.237c0-3.5.257-6.092.396-7.235Z" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
+
+  <div class="search-popup">
+    <div class="search-popup-container">
+
+      <form role="search" method="get" class="form-group" action="">
+        <input type="search" id="search-form" class="form-control border-0 border-bottom"
+          placeholder="Escribe y pulsa Enter" value="" name="s" />
+        <button type="submit" class="search-submit border-0 position-absolute bg-white"
+          style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
+            <use xlink:href="#search"></use>
+          </svg></button>
+      </form>
+
+      <h5 class="cat-list-title">Búsquedas comunes</h5>
+
+      <ul class="cat-list">
+        <li class="cat-list-item">
+          <a href="?s=reco#search" title="Recomendados">Recomendados</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="?s=top#search" title="T-Más">Más vendidos</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="?s=new#search" title="Novedades">Novedades</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="?s=limit#search" title="Limitados">Limitados</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="?s=top#search" title="Top">Mejores</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="?s=eco#search" title="Económicos">Económicos</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Growers cider</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Fresh grapes</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Heinz tomato ketchup</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center w-100 flex-nowrap">
+
+        <div class="col-auto">
+		  <button onclick="openFullscreen()" class="btn btn-link">
+           <svg width="230" height="30" xmlns="http://www.w3.org/2000/svg" fill="#111" viewBox="100 8 24 40">
+              <g>
+			<g>
+				<path class="st0" d="M64.6,43.8h-6V11.7h6V43.8z"></path>
+				<path class="st0" d="M75.7,11.7c0.2,0,0.3,0.1,0.5,0.1c0.1,0.1,0.3,0.2,0.4,0.3c0.1,0.1,0.3,0.3,0.4,0.5l16.9,21.5
+					c-0.1-0.5-0.1-1-0.1-1.5c0-0.5,0-1,0-1.4V11.7H99v32.2h-3.1c-0.5,0-0.9-0.1-1.2-0.2c-0.3-0.1-0.6-0.4-0.9-0.8L77,21.4
+					c0,0.5,0.1,0.9,0.1,1.4c0,0.5,0,0.9,0,1.3v19.7h-5.3V11.7H75C75.3,11.7,75.5,11.7,75.7,11.7z"></path>
+				<path class="st0" d="M125.8,11.7v4.8h-14.3v8.9h11.2V30h-11.2v9.1h14.3v4.8h-20.3V11.7H125.8z"></path>
+				<path class="st0" d="M145.5,38.9h12.9v4.9h-18.9V11.7h6V38.9z"></path>
+				<path class="st0" d="M169.3,43.8h-6V11.7h6V43.8z"></path>
+				<path class="st0" d="M193.7,17.5c-0.2,0.3-0.4,0.6-0.6,0.7c-0.2,0.1-0.5,0.2-0.8,0.2c-0.3,0-0.6-0.1-1-0.3
+					c-0.4-0.2-0.8-0.5-1.3-0.8c-0.5-0.3-1.1-0.5-1.8-0.8c-0.7-0.2-1.5-0.3-2.4-0.3c-0.8,0-1.6,0.1-2.2,0.3c-0.6,0.2-1.1,0.5-1.6,0.8
+					c-0.4,0.4-0.7,0.8-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.6c0,0.8,0.2,1.4,0.6,1.9c0.4,0.5,1,0.9,1.7,1.3c0.7,0.4,1.5,0.7,2.4,1
+					c0.9,0.3,1.8,0.6,2.7,0.9c0.9,0.3,1.8,0.7,2.7,1.1c0.9,0.4,1.7,1,2.4,1.6c0.7,0.6,1.3,1.4,1.7,2.4c0.4,0.9,0.6,2.1,0.6,3.4
+					c0,1.5-0.2,2.8-0.7,4.1c-0.5,1.3-1.2,2.4-2.2,3.3c-1,0.9-2.1,1.7-3.5,2.2c-1.4,0.5-3,0.8-4.7,0.8c-1,0-2-0.1-3-0.3
+					c-1-0.2-1.9-0.5-2.9-0.9c-0.9-0.4-1.8-0.8-2.6-1.3c-0.8-0.5-1.5-1.1-2.1-1.7l1.7-2.9c0.2-0.2,0.4-0.4,0.6-0.5s0.5-0.2,0.8-0.2
+					c0.4,0,0.8,0.2,1.2,0.5c0.4,0.3,0.9,0.6,1.5,1c0.6,0.4,1.3,0.7,2.1,1c0.8,0.3,1.7,0.5,2.9,0.5c1.7,0,3-0.4,4-1.2
+					c0.9-0.8,1.4-2,1.4-3.5c0-0.8-0.2-1.5-0.6-2.1c-0.4-0.5-1-1-1.7-1.3s-1.5-0.7-2.4-0.9c-0.9-0.3-1.8-0.5-2.7-0.8
+					c-0.9-0.3-1.8-0.7-2.7-1.1c-0.9-0.4-1.7-1-2.4-1.6c-0.7-0.7-1.3-1.5-1.7-2.5s-0.6-2.2-0.6-3.7c0-1.2,0.2-2.3,0.7-3.4
+					c0.5-1.1,1.1-2.1,2-3c0.9-0.9,2-1.5,3.3-2.1c1.3-0.5,2.8-0.8,4.5-0.8c1.9,0,3.6,0.3,5.2,0.9s3,1.4,4.1,2.5L193.7,17.5z"></path>
+				<path class="st0" d="M223,11.7v4.9h-9.7v27.2h-6V16.6h-9.7v-4.9H223z"></path>
+			</g>
+		</g>
+		<g>
+			<g>
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13.6987" y1="44.189" x2="13.6987" y2="11.7338">
+					<stop offset="0" style="stop-color:#000000;stop-opacity:0"></stop>
+					<stop offset="6.403953e-02" style="stop-color:#000000;stop-opacity:6.403953e-02"></stop>
+					<stop offset="1" style="stop-color:#000000"></stop>
+				</linearGradient>
+				<path class="st1" d="M21.2,44.2H16L4.3,11.7h5.9c0.5,0,1,0.1,1.3,0.4c0.4,0.3,0.6,0.6,0.7,1l6,17.2l4.9,13.8H21.2z"></path>
+			</g>
+			<g>
+				<path d="M36.1,44.2H31L19.2,11.7h5.9c0.5,0,1,0.1,1.3,0.4c0.4,0.3,0.6,0.6,0.7,1l6,17.2L38,44.2H36.1z"></path>
+			</g>
+			<g>
+				<path d="M34.2,44.2l6.6-18.7l8.2-23.3c0.2-0.6,0.5-1,1-1.4c0.5-0.4,1.1-0.6,1.8-0.6h5.6l-15.9,44h-4.6H34.2z"></path>
+			</g>
+		</g>
+</svg>
+          </button>
+        </div>
+
+        <div class="col-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+
+<div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownpais" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pais</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownpais">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Todo</a>
+                    </li>
+					<li>
+							<a href="España" class="dropdown-item item-anchor">España </a>
+						</li>
+						                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownregion" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Región</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownregion">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Todo</a>
+                    </li>
+					<li>
+							<a href="DOCa Rioja" class="dropdown-item item-anchor">DOCa Rioja </a>
+						</li>
+						<li>
+							<a href="DO Ribera del Duero" class="dropdown-item item-anchor">DO Ribera del Duero </a>
+						</li>
+						<li>
+							<a href="DO Rueda" class="dropdown-item item-anchor">DO Rueda </a>
+						</li>
+						                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdowntipo" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdowntipo">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Todo</a>
+                    </li>
+					<li>
+							<a href="Tinto" class="dropdown-item item-anchor">Tinto </a>
+						</li>
+						<li>
+							<a href="Rosado" class="dropdown-item item-anchor">Rosado </a>
+						</li>
+						<li>
+							<a href="Blanco" class="dropdown-item item-anchor">Blanco </a>
+						</li>
+						                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdowntam" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cantidad</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdowntam">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Todo</a>
+                    </li>
+					<li>
+							<a href="75cl" class="dropdown-item item-anchor">75cl </a>
+						</li>
+						<li>
+							<a href="150cl" class="dropdown-item item-anchor">150cl </a>
+						</li>
+						<li>
+							<a href="37,5cl" class="dropdown-item item-anchor">37,5cl </a>
+						</li>
+						                  </ul>
+                </li>
+				<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownElaborador" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Elaborador</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownElaborador">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Todo</a>
+                    </li>
+					<li>
+							<a href="Marqués de Murrieta" class="dropdown-item item-anchor">Marqués de Murrieta </a>
+						</li>
+						<li>
+							<a href="Ysios" class="dropdown-item item-anchor">Ysios </a>
+						</li>
+						<li>
+							<a href="Azpilicueta" class="dropdown-item item-anchor">Azpilicueta </a>
+						</li>
+						<li>
+							<a href="Alcorta" class="dropdown-item item-anchor">Alcorta </a>
+						</li>
+						<li>
+							<a href="Marqués de Cáceres" class="dropdown-item item-anchor">Marqués de Cáceres </a>
+						</li>
+						                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		<div class="col-3 col-lg-auto">
+          <ul class="list-unstyled d-flex m-0">
+            <!--<li class="search-box" class="mx-2">
+              <a href="#search" class="search-button">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </a>
+            </li>
+			-->
+			<li class="mx-2">
+              <a href="#" id='menubutton' onclick="openNav()">
+                ☰
+              </a>
+			  <div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <p>Preferencias</p> <!--111-->
+				  <hr>
+				  <p>Modo Claro / Oscuro</p> <!--111-->
+				  <select name="modo" id="modo" class="selectsidemenu">
+						<option id="modoclaro" value="claro">Modo Claro</option>
+						<option id="modooscuro" value="oscuro">Modo Oscuro</option>
+					</select>
+					<hr>
+					<p>Ordenar elementos</p> <!--111-->
+					<select name="orden" id="orden" class="selectsidemenu" onchange="orderELements(event, this.value)">
+						<option value="defecto">Ordenar por defecto</option>
+						<option value="nombre">Ordenar por nombre</option>
+						<option value="precio">Ordenar por precio</option>
+						<option value="pais">Ordenar por país</option>
+						<option value="region">Ordenar por región</option>
+						<option value="tipo">Ordenar por tipo</option>
+						<option value="tam">Ordenar por tamaño</option>
+						<option value="elaborador">Ordenar por elaborador</option>
+						<option value="recomendado">Ordenar por recomendación</option>
+					</select>
+					<hr>
+				  <p>Cambiar vista</p> <!--111-->
+				  <select name="vista" id="vista" class="selectsidemenu">
+						<option value="defecto">Vista por defecto</option>
+						<option value="madera">Vista Madera</option>
+						<option value="blanca">Vista Blanca</option>
+					</select>
+					<hr>
+					<p>Rango de precio</p>
+					<label for="minpriceRange" class="form-label">Min: <span id="priceValue">0</span>€</label>
+					<input type="range" class="form-range" id="minpriceRange" min="0" max="500" step="10" value="0" oninput="updatePrice(this.value)">
+					<label for="maxpriceRange" class="form-label">Max: <span id="priceValue2">500</span>€</label>
+					<input type="range" class="form-range" id="maxpriceRange" min="0" max="500" step="10" value="500" oninput="updatePrice2(this.value)">
+					<hr>
+					<a href="#search" class="search-button d-flex align-items-center gap-2">
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<use xlink:href="#search"></use>
+						</svg>
+						<span>Búsqueda</span>
+					</a>
+				</div>
+<div id="infoSidenav" class="sidenav" style="width: 0px;">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeInfo()">×</a>
+				  <div id="detailcontainer" class="container-fluid p-4 text-center" style="
+    height: 30px;
+">
+  <button id="modalcloser" onclick="closeModal('modelConfirm')" type="button" class="btn-close position-absolute top-0 end-0"></button>
+
+  <div class="container">
+    <h1 id="dato-nombre" class="border-bottom border-4 display-5 text-white py-3">Ysios Los Prados</h1>
+
+    <div class="card bg-dark text-white p-4">
+          <div class="row">
+            <div class="col-6 text-secondary">
+				<div class='row description'>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 329.3 372.1" class="w-6 h-6"  xml:space="preserve">
+						<g>
+						<path d="M124.1,108.9c-4.4-7.3-9.7-13.1-16.8-17.1c-13.8-7.9-28.1-8.6-42.6-2c-2.1,1-3.5,0.8-4.7-1.1c-3.2-5-6.6-9.9-9.5-15.1
+							c-2.2-4-1.2-5.8,3.3-7c12.7-3.2,25.2-2.4,37.5,2.1c1.4,0.5,2.7,1,4.7,1.7C90,59,87.2,47.6,88.3,35.6c0.6-5.8,2-11.5,3.5-17.1
+							c1.1-4.3,3.2-4.9,7-2.7c15.2,8.8,25.1,21.7,29.9,38.6c0.2,0.7,0.4,1.4,0.6,2.2c0.1,0.2,0.2,0.4,0.5,1.1c0.7-1.4,1.3-2.5,1.9-3.6
+							c6.4-11.7,15.5-20.7,27.5-26.6c4-2,5.5-1.2,6.8,3.1c0.2,0.6,0.4,1.2,0.6,1.8c1.6,5,1.3,9.5-1.7,14.4c-6.9,11.4-10.5,24.1-12.5,37.3
+							c-0.2,1.3-1.2,3.2-2.3,3.6c-10.7,3.9-19.1,10.5-25.1,20.3C125,108.1,124.7,108.3,124.1,108.9z"></path>
+						<path d="M130,131.5c-0.1-16.7,12.1-31.6,28.3-34.1c3.6-0.6,4.5-1.9,4.8-5.3c2.2-27.6,12.7-51,36.1-66.9c7.9-5.4,17.2-8.8,26-12.8
+							c3.7-1.7,7-0.1,8.1,3c1.2,3.3-0.5,6.3-4.6,7.6c-15.9,5.1-29.7,13.5-39.8,27.1c-10,13.3-14.2,28.6-15.1,45c-0.1,2.5,1.1,3.1,3,3.8
+							c13.9,5.3,22.9,18.5,22.6,33c-0.4,14.9-9.5,27.5-23.5,32.3C153.5,171.9,130.1,155.2,130,131.5z"></path>
+						<path d="M159.7,263.5c-19.2,0-34.7-15.5-34.7-34.7c0-19.1,15.6-34.8,34.7-34.8c19,0,34.8,15.7,34.8,34.8
+							C194.5,247.9,178.8,263.5,159.7,263.5z"></path>
+						<path d="M239.7,280.7c0.1,19.7-16.6,36-36,35c-20.5-1.1-35.6-19-33-39.2c0.3-2,0.9-3.3,3.1-4c12.4-4,21.4-11.9,27.2-23.6
+							c1.1-2.2,2.3-2.7,4.6-2.7C224.4,246.5,239.6,261.7,239.7,280.7z"></path>
+						<path d="M49.2,131.1c0.1-18.5,15-33.9,33.4-34.5c18.8-0.6,34.6,13.8,35.8,32.4c0.2,3-0.3,4.4-3.8,5.2
+							c-15.9,3.6-27.1,13.1-33.2,28.3c-1.2,3-2.7,3.3-5.3,2.7C60.4,161.7,49.1,147.4,49.2,131.1z"></path>
+						<path d="M245.8,157.7c-7.6-13.1-18.4-21.3-33.2-24c-0.8-0.2-1.8-1.7-2-2.8c-1.4-5.9-2.6-11.8-3.7-17.8c-0.2-1.3-0.1-3,0.4-4.2
+							c6.6-14.5,23.1-22.5,38.8-19c16,3.6,27.2,17.9,27,34.5C273.1,140.4,261.7,154.3,245.8,157.7z"></path>
+						<path d="M160.3,292.1c6,19.3,18.8,30.7,38.5,34.5c2.4,14.5-12.1,31.7-28.8,34.1c-19.4,2.8-37.6-10.8-39.8-29.7
+							C128,311.6,141.6,293.9,160.3,292.1z"></path>
+						<path d="M290.7,213.3c-5.4-20.7-18.6-33.1-39.8-37c-0.4-2.4-0.7-4.8-1.1-7.5c0.9-0.4,1.8-0.8,2.7-1.1c10.8-3.6,19.4-10.2,25.2-20
+							c1.4-2.3,3-3.2,5.7-3.3c18.7-0.8,34.1,11.9,36.7,30.2c2.5,17.6-9.4,34.4-27.2,38.4C292.3,213.1,291.6,213.2,290.7,213.3z"></path>
+						<path d="M208.8,144.7c16.3,1.6,29.6,15.1,30.7,30.9c1.2,18.1-9.4,32.9-26.5,36.8c-0.7,0.2-1.5,0.3-2.2,0.5c-6.9,1.3-7,1.3-10.2-4.8
+							c-5.9-11.4-14.9-19.2-27.1-23c-3.5-1.1-3-3.3-3.3-5.7c-0.3-2.8,1.7-2.7,3.6-3.1c16.5-3.8,27.9-13.6,34.1-29.4
+							C208.2,146.3,208.4,145.6,208.8,144.7z"></path>
+						<path d="M210.9,224.8c21.2-4.2,34.1-16.5,39.4-36.7c12.1,0.5,24.3,10.8,28.3,23.9c6.6,21.2-9,43.8-30.7,44.8
+							c-2.4,0.1-4-0.4-5.6-2.6c-6-8.6-14-14.6-24.1-17.2c-4.4-1.1-5.8-3.5-6.4-7.3C211.4,228.2,211.2,226.6,210.9,224.8z"></path>
+						<path d="M79.4,189.9c7.3,19.5,13,25.2,34.4,34.2c0,3.8,0,7.7,0,11.9c-2.1,0.7-4.4,1.4-6.5,2.2c-9.3,3.8-16.5,10-22.1,18.4
+							c-0.8,1.1-2.7,2.2-4,2.2c-16.4-1-30.5-14.9-31.8-31c-1.5-17.8,9.6-33.4,26.6-37.4C77,190.1,78.1,190.1,79.4,189.9z"></path>
+						<path d="M117.3,247c8.4,17.2,22,26.4,41,27.9c0.1,0.7,0.3,1.3,0.3,1.9c0,1.1,0,2.2,0,3.6c-19.7,3.7-32.7,15.1-38.7,34.4
+							c-13.5,0.5-28.3-14-30.1-29.5C87.7,267.3,99.5,250.6,117.3,247z"></path>
+						<path d="M120.5,144.7c6.5,18.2,19.2,29,38,32.4c0.2,0.4,0.4,0.6,0.4,0.8c0,1.5,0,3,0,4.8c-9.2,0.6-18,3-25.7,8.5
+							c-7.6,5.4-13.1,12.5-16.5,21.1c-12.6-0.2-26.3-15.8-27-30.6C88.8,162.5,101.6,146.9,120.5,144.7z"></path>
+						<path d="M39.7,144.8c6.5,18.2,19.5,29,38.9,32.9c-20.3,4.3-33.6,15.8-39.5,35.4c-15,0-29.7-15.9-30.2-32.3
+							C8.3,162,22,145.9,39.7,144.8z"></path>
+						</g>
+					</svg>
+					Uvas
+				</div>
+			</div>
+            <div id="dato-uvas" class="col-6">Tempranillo</div>
+          </div>
+          <hr>
+          <div class="row">
+                        <div class="col-6 text-secondary">
+				<div class='row description'>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 329.3 372.1"  xml:space="preserve">
+									<g>
+										<path d="M255.3,109.1c0.1,13.7-4.6,26.1-10.2,38.2c-11.5,24.7-26.9,47-43.3,68.6c-8.7,11.4-17.8,22.4-26.9,33.5
+											c-4.5,5.5-12,5.6-16.5,0.2c-23-27.7-44.9-56.2-62.6-87.7c-7.2-12.9-13.8-26.1-16.7-40.8c-3.4-17.3-0.2-33.8,7.7-49.1
+											C103.9,39,131.5,21.5,168.9,22C216.3,22.6,254.7,62,255.3,109.1z M167.1,59.4c-26.7,0.1-48.6,22.1-48.4,48.6
+											c0.2,27,21.8,48.4,48.7,48.3c26.6-0.1,48.5-22.2,48.4-48.8C215.6,81.1,193.7,59.3,167.1,59.4z"></path>
+										<path d="M321.6,335.3c-1.1-0.2-2-0.3-2.8-0.5c-34.3-9.4-68.7-18.8-103-28.2c-1.8-0.5-2.9-1-3.2-3.1c-3.3-25-6.8-49.9-10-74.9
+											c-0.2-1.5,0.5-3.4,1.4-4.7c3.6-4.9,7.3-9.8,11.2-14.5c0.7-0.9,2.4-1.6,3.5-1.4c19.4,3.7,38.8,7.6,58.2,11.2
+											c4.5,0.9,7.3,3.2,9.1,7.3c13.5,32.7,27.1,65.4,40.7,98.1c1.9,4.5,1.2,7.9-2,9.7C323.7,334.8,322.5,335,321.6,335.3z"></path>
+										<path d="M112.6,224.7c-5.7,40.8-11.3,81.2-17.1,122.1c-4.4-1.4-8.5-2.7-12.5-4.1c-24.8-8.1-49.5-16.2-74.3-24.4
+											c-6.9-2.3-8.6-6-5.8-12.7c12.1-29.1,24.3-58.1,36.4-87.2c2.8-6.6,6.4-8.5,13.4-6.9c18.7,4.1,37.5,8.2,56.2,12.3
+											C110.1,224,111.2,224.3,112.6,224.7z"></path>
+										<path d="M196.6,234.4c0.9,6.4,1.7,12.1,2.5,17.9c2.4,17.6,4.7,35.2,7.3,52.8c0.5,3.2-0.3,4.6-3.4,5.8
+											c-32.5,12.5-64.9,25.2-97.3,37.8c-1.1,0.4-2.3,0.8-3.9,1.4c0.8-6,1.5-11.6,2.3-17.1c4.4-31.6,8.8-63.3,13.2-94.9
+											c0.1-0.8,0.3-1.5,0.4-2.3c1.4-8.6,1.4-8.5,9.5-10.6c1.9-0.5,2.9-0.1,4.2,1.5c7.5,9.3,15.1,18.7,22.9,27.8c7.6,8.9,19,8.5,26.4-0.4
+											C185.8,247.6,191,241.3,196.6,234.4z"></path>
+									</g>
+									</svg>
+					Region
+				</div>
+			</div>
+            <div id="dato-region" class="col-6">DOCa Rioja</div>
+          </div>
+          <hr>
+          <div class="row">
+                        <div class="col-6 text-secondary">
+				<div class='row description'>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="700 0 229.3 372.1" class="w-6 h-6"  xml:space="preserve">
+						<g>
+							<path d="M833,0.1c27.3,0,54.7,0.1,82-0.1c3.4,0,5.2,0.8,6.7,4.1c13.1,28.8,22.6,58.5,22,90.6c-1,51.1-40.5,96.7-91,105.2
+								c-60.1,10.1-115-26.5-128.5-85.8c-5-22.1-2.6-44,3.6-65.4c4.4-15.1,10.7-29.7,16.1-44.6c1.2-3.4,3.3-4.1,6.6-4.1
+								C778,0.1,805.5,0.1,833,0.1z"></path>
+							<path d="M814.7,215.6c12.4,0,23.8,0,35.9,0c0.1,1.3,0.2,3.1,0.2,4.9c0,29.5,0.1,59-0.1,88.5c0,3.9,0.8,5.2,5,5.6
+								c13.5,1.3,26.8,3.9,39,9.9c4.4,2.2,8.7,4.9,12.3,8.2c6.7,6.2,6.8,14.1-0.2,19.8c-5.8,4.7-12.6,8.6-19.6,11.1
+								c-20.7,7.6-42.4,9.1-64.2,8.1c-17-0.8-33.7-3.1-49.5-9.9c-5.1-2.2-10-5.1-14.2-8.7c-7.6-6.4-7.5-14.4-0.2-21.3
+								c6.7-6.3,15.1-9.9,23.8-12.1c8.7-2.2,17.5-4.1,26.4-5.2c4.6-0.6,5.4-2,5.4-6.2c-0.2-29.2-0.1-58.4-0.1-87.6
+								C814.7,219.1,814.7,217.3,814.7,215.6z"></path>
+						</g>
+					</svg>
+					Tipo
+				</div>
+			</div>
+            <div id="dato-tipo" class="col-6">Tinto</div>
+          </div>
+          <hr>
+          <div class="row">
+                        <div class="col-6 text-secondary">
+				<div class='row description'>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="70 0 329.3 520.1" class="w-6 h-6"  xml:space="preserve">
+<g>
+	<g>
+		<path d="M410.613,5.068C409.354,2.002,406.368,0,403.055,0H108.927c-3.314,0-6.3,2.002-7.558,5.068
+			C85.275,44.276,72.907,85.096,64.611,126.39c-0.889,4.425,3.064,8.843,7.488,9.733l114.692,0.047
+			c-5.371,83.308-5.778,163.839-1.214,239.66H79.419c-13.364-70.389-14.971-142.725-4.415-213.951
+			c0.661-4.464-2.421-8.618-6.884-9.28c-4.472-0.67-8.619,2.421-9.28,6.884c-17.371,117.208-2.665,237.355,42.529,347.449
+			c1.258,3.065,4.244,5.068,7.558,5.068h294.128c3.314,0,6.3-2.002,7.558-5.068c32.296-78.678,48.99-161.558,49.615-246.335
+			C460.876,172.822,444.183,86.848,410.613,5.068z M413.259,59.915c2.901,9.039,5.59,18.12,8.082,27.234H322.7
+			c-0.842-9.203-1.755-18.311-2.739-27.234H413.259z M114.43,16.34h283.122c3.619,9.029,7.018,18.11,10.215,27.234H104.222
+			C107.423,34.423,110.825,25.34,114.43,16.34z M306.293,87.149h-99.399c0.797-9.133,1.65-18.236,2.547-27.234h94.075
+			C304.512,68.831,305.441,77.933,306.293,87.149z M98.756,59.915h94.262c-0.89,9.003-1.733,18.108-2.525,27.234H90.681
+			C93.17,78.021,95.866,68.939,98.756,59.915z M82.685,119.83c1.186-5.458,2.445-10.906,3.775-16.34h339.124
+			c1.334,5.437,2.604,10.883,3.794,16.34H82.685z M98.777,452.085c-2.887-9.029-5.591-18.106-8.073-27.234h98.577
+			c0.842,9.201,1.755,18.309,2.739,27.234H98.777z M397.552,495.66H114.43c-3.61-9.011-6.996-18.095-10.189-27.234h96.89
+			c0.041,0,108.787,0,108.787,0c0.042,0,97.849,0,97.849,0C404.57,477.55,401.171,486.631,397.552,495.66z M205.687,424.851h99.399
+			c-0.799,9.136-1.651,18.24-2.547,27.234h-94.076C207.47,443.167,206.54,434.065,205.687,424.851z M413.259,452.085h-94.297
+			c0.89-8.999,1.733-18.105,2.525-27.234h99.854C418.849,433.965,416.161,443.046,413.259,452.085z M425.584,408.511H313.879
+			c-0.023,0-0.046,0-0.068,0H196.894c-0.039,0-110.384,0-110.384,0c-1.326-5.434-2.589-10.879-3.773-16.34h346.641
+			C428.187,397.628,426.919,403.074,425.584,408.511z M432.715,375.83H325.196c2.197-34.122,3.586-68.228,4.112-101.515
+			c0.071-4.512-3.528-8.227-8.041-8.298c-0.044-0.001-0.087-0.001-0.131-0.001c-4.452,0-8.097,3.573-8.167,8.042
+			c-0.527,33.365-1.929,67.563-4.149,101.773H201.949c-4.607-75.751-4.198-156.292,1.217-239.66h106.871
+			c2.067,34.02,3.143,69.404,3.179,105.343c0.004,4.51,3.661,8.161,8.17,8.161c4.52-0.004,8.175-3.666,8.17-8.179
+			c-0.035-35.913-1.102-71.289-3.147-105.327h106.308C447.866,215.454,447.866,296.546,432.715,375.83z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<path d="M72.139,136.127C72.177,136.131,72.165,136.13,72.139,136.127L72.139,136.127z"/>
+			<path d="M72.139,136.127c-0.011-0.001-0.016-0.002-0.04-0.004C72.099,136.123,72.119,136.125,72.139,136.127z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M72.099,136.123C71.748,136.099,72.454,136.194,72.099,136.123L72.099,136.123z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<circle cx="139.351" cy="310.468" r="8.17"/>
+	</g>
+</g>
+<g>
+	<g>
+		<circle cx="106.67" cy="343.149" r="8.17"/>
+	</g>
+</g>
+<g>
+	<g>
+		<circle cx="405.318" cy="168.851" r="8.17"/>
+	</g>
+</g>
+					</svg>
+					Elaborador
+				</div>
+			</div>
+            <div id="dato-elaborador" class="col-6">Elaborador</div>
+          </div>
+		  <hr>
+          <div class="row">
+                       <div class="col-6 text-secondary">
+				<div class='row description'>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 552" class="w-6 h-6"  xml:space="preserve">
+						<g>
+							<path class="st0" d="M511.434,239.204c-4.138-63.963-31.794-121.624-74.418-164.217c-17.682-17.685-37.951-32.809-60.22-44.74
+								C340.806,10.962,299.67,0,256,0C185.365,0,121.273,28.67,74.984,74.988C28.663,121.273,0,185.361,0,256
+								c0,70.639,28.663,134.735,74.984,181.013C121.273,483.329,185.365,512,256,512c10.178,0,20.211-0.593,30.092-1.757
+								c25.423-2.974,49.714-9.666,72.278-19.558c18.337-8.004,35.573-18.099,51.38-29.968c9.642-7.261,18.755-15.194,27.266-23.704
+								C483.337,390.734,512,326.639,512,256C512,250.347,511.82,244.748,511.434,239.204z M368.22,213.758
+								c-8.983,3.483-31.286,4.653-36.252,1.343c-4.943-3.272-17.416-7.379-22.444-6.488c-5.032,0.89,1.604,8.416-4.259,9.338
+								c-5.86,0.898-13.395-3.208-19.294-7.44c-5.856-4.162-15.144-5.794-15.144-5.794c-2.26-0.273-4.529-0.547-6.789-0.804
+								c-3.365-6.762-1.608-22.096-13.52-18.63c-11.903,3.475-51.197,10.416-59.77,12.11c-8.573,1.726-18.81,15.39-25.63,25.532
+								c-6.843,10.244-25.481,42.241-28.842,47.215c-3.365,5.059-4.884,36.65-4.79,44.833c0.085,8.339,37.322,42.623,49.022,44.107
+								c11.759,1.616,43.697-6.66,52.091-8.417c8.429-1.695,13.309,9.557,19.977,9.431c6.699-0.117,14.948,2.983,8.159,12.689
+								c-6.82,9.634-6.851,14.413-0.328,20.597c6.547,6.247,19.169,29.381,10.506,47.707c-8.604,18.341-2.292,27.008,2.323,34.262
+								c0.948,1.491,1.932,3.552,2.916,5.988c-6.637,0.594-13.363,0.89-20.152,0.89c-62.51,0-118.985-25.297-159.97-66.25
+								C55.07,374.986,29.764,318.51,29.764,256c0-62.51,25.306-118.986,66.266-159.978c40.984-40.952,97.459-66.25,159.97-66.25
+								c7.765,0,15.476,0.382,23.042,1.155c-1.488,1.101-3.127,2.233-5.032,3.365c-12.649,7.558-17.744,10.931-27.058,13.453
+								c-9.35,2.506-5.895,21.292-2.475,24.713c3.428,3.42,11.076-0.844,17.006-4.225c5.922-3.365,7.648,3.42,7.675,5.973
+								c0,2.561,3.424,12.806,8.484,11.111c5.095-1.695,13.457-18.7,12.594-21.222c-0.863-2.569-4.263-9.378,1.608-14.437
+								c5.805-5.028,12.465-9.198,18.278-13.368c1.811,0.406,3.596,0.891,5.352,1.39c-0.508,1.257-1.667,2.802-3.568,4.498
+								c-6.64,5.871-9.139,10.103-9.139,10.103s-1.581,13.563,2.62,13.563c4.197,0.023,15.897-2.436,21.698-4.107
+								c5.836-1.67,5.868,3.428,0.058,5.091c-5.832,1.639-10.834,4.169-10.834,4.169c-0.835,2.522-1.636,5.092-2.471,7.613
+								c-8.366,5.068-11.7,12.719-11.7,12.719s-37.123,0.804-39.739,1.663c-2.53,0.812-1.694-7.675-1.694-7.675s2.498-8.55-1.729-7.714
+								c-4.197,0.866-4.224,8.347-4.224,8.55c-0.566,3.396-1.132,6.816-1.667,10.236c0,0-16.194,3.396-19.618,6.84
+								c-3.392,3.428-14.5,13.672-17.053,15.421c-2.565,1.694-11.134,4.286-14.562,6.012c-3.424,1.734,10.271,7.722,10.271,10.275
+								c0,2.561,0.031,14.554-5.118,15.414c-5.126,0.866-29.143,0.898-29.143,0.898s-7.683,27.414-5.954,29.982
+								c1.726,2.553,12.856,8.51,19.708,7.652c6.844-0.874,22.233-8.573,22.233-8.573c2.264-5.153,4.556-10.283,6.848-15.421
+								c4.552-4.856,9.108-9.713,13.664-14.585c0,0.023,10.236,4.255,13.664,0.828c3.388-3.42,10.15-6.855,10.209-6.855
+								c0.027,0,6.781,12.781,11.017,14.468c4.251,1.709,11.841,8.487,12.676,12.75c0.836,4.255,1.667,11.907,4.197,10.174
+								c2.534-1.726,6.789-11.93,6.789-11.93s5.891-3.428-0.836-6.817c-6.73-3.365-18.575-15.272-20.273-17.834
+								c-1.694-2.561-0.832-10.244,5.091-6.847c5.954,3.428,21.94,18.692,21.94,18.692s0.835,7.675,5.001,11.048
+								c4.197,3.358,8.366,9.284,8.366,12.68c-0.031,3.396-0.031,5.06,5.801,5.028c5.868-0.031,3.424-11.041,3.424-13.57
+								c0-2.561-0.8-7.652,3.365-7.652c4.166-0.031,10.806,3.303,10.806,3.303s-4.228,16.974,4.044,19.434
+								c8.339,2.444,33.82-4.575,33.731-0.351C373.342,191.053,377.246,210.284,368.22,213.758z M415.969,415.977
+								c-6.043,6.028-12.414,11.728-19.11,17.052c-0.597-11.728-0.445-31.677,1.159-39.477c1.995-9.377,19.559-16.459,27.832-29.405
+								c8.334-13.008,21.257-27.828,18.844-46.863c-14.141,7.034-22.116,10.603-29.827,6.113c-7.71-4.497-15.178-20.394-18.247-26.828
+								c-2.862-6.16-29.408-56.733-24.587-60.332c5.032-3.31,28.515,39.212,37.565,51.76c9.142,12.742,5.535,28.975,24.618,18.52
+								c19.047-10.448,42.358-29.178,45.543-37.362c3.276-8.151-8.334-28.842-13.066-23.846c-4.646,5.06-18.576,7.152-18.607,7.152
+								c-5.954-10.681-11.997-21.495-18.126-32.387c0,0,7.887-0.149,15.538,6.215c7.71,6.403,22.92,14.109,31.942,15.413
+								c1.218,0.195,2.678,0.219,4.346,0.133c0.296,4.669,0.448,9.401,0.448,14.164C482.236,318.51,456.93,374.986,415.969,415.977z"/>
+							<path class="st0" d="M205.232,89.526c2.569,1.718-1.698,9.432-5.114,15.429c-3.42,5.996-1.706,9.417-1.706,9.417
+								s16.272-2.577,19.688-4.295c3.416-1.701,5.973-12.844,3.4-15.412c-2.569-2.569-11.138-10.268-11.15-12.837
+								c0-2.569,0.839-11.977-2.596-14.523c-3.42-2.576-11.119,2.28-11.103,7.684C196.655,78.415,202.66,87.808,205.232,89.526z"/>
+						</g>
+					</svg>
+					Pais
+				</div>
+			</div>
+            <div id="dato-pais" class="col-6">Tinto</div>
+          </div>
+        </div>
+
+    <div class="mt-3">
+      <div class="col text-center">
+        <button id="curiosidadesbutton" class="btn btn-outline-light" onclick="openTab(event, 'curiosidades')">Curiosidades</button>
+        <button id="notasbutton" class="btn btn-outline-light" onclick="openTab(event, 'notas')">Nota de cata</button>
+      </div>
+    </div>
+	<hr>
+    <p id="curiosidades">q</p>
+	<p style= 'display:none'id="notas">q</p>
+    <form action="./admin/pages/login.php" method="POST">
+          <input type="hidden" name="csrf_token" value="675b649aa2e0e8534106cc5f7472ddaf524cc296e10fbed195995157ecb9f447">
+          <input id="productopedido" type="hidden" name="productopedido" value="4">
+          <input id="restaurante" type="hidden" name="restaurante" value="4">
+          <button type="submit" class="btn btn-light w-100 fw-bold">Solicitar Vino →</button>
+        </form>
+  </div>
+</div>
+				</div>
+            </li>
+          </ul>
+        </div>
+       <!-- <div class="col-3 col-lg-auto">
+          <ul class="list-unstyled d-flex m-0">
+            <li class="search-box" class="mx-2">
+              <a href="#search" class="search-button">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+-->
+      </div>
+
+    </div>
+  </nav>
+
+<script defer="">
+		var elem = document.documentElement;
+		var fS = new Boolean(true);
+		function openFullscreen() {
+			if(fS)
+			{
+				if (elem.requestFullscreen) {
+					elem.requestFullscreen();
+				} else if (elem.webkitRequestFullscreen) { /* Safari */
+					elem.webkitRequestFullscreen();
+				} else if (elem.msRequestFullscreen) { /* IE11 */
+					elem.msRequestFullscreen();
+				}
+				fS = false;
+			}
+			else
+			{
+				closeFullscreen();
+				fS = true;
+			}
+		}
+		/* Close fullscreen */
+		function closeFullscreen() {
+		  if (document.exitFullscreen) {
+			document.exitFullscreen();
+		  } else if (document.webkitExitFullscreen) {
+			document.webkitExitFullscreen();
+		  } else if (document.msExitFullscreen) {
+			document.msExitFullscreen();
+		  }
+		}
+function openTab(evt, tabName) {
+	document.getElementById("notas").style.display = "none";
+	document.getElementById("curiosidades").style.display = "none";
+	document.getElementById(tabName).style.display = "block";
+	document.getElementById("curiosidadesbutton").style.borderBottom = '2px solid rgba(241, 241, 241, 0.2)';
+	document.getElementById("notasbutton").style.borderBottom = '2px solid rgba(241, 241, 241, 0.2)'; 
+	evt.target.style.borderBottom = '4px solid rgba(255, 255, 255, 1)'; 
+}
+document.getElementById("modo").addEventListener("change", function() {
+    var modo = this.value;
+    var navbar = document.querySelector(".navbar");
+    var bannerContent = document.querySelector(".banner-content");
+    var navLinks = document.querySelectorAll(".nav-link");
+    var bannerChildren = document.querySelectorAll(".banner-content *");
+    var svgs = document.querySelectorAll("svg");
+	var menubutton = document.getElementById("menubutton");
+
+    if (modo === "oscuro") {
+        navbar.style.backgroundColor = "#111";
+        bannerContent.style.color = "white";
+        navLinks.forEach(link => link.style.color = "white");
+        bannerChildren.forEach(child => child.style.color = "white");
+        svgs.forEach(svg => svg.setAttribute("fill", "white"));
+		navbar.classList.remove("bg-light");
+		menubutton.style.color = "white";
+    } else if (modo === "claro") {
+		navbar.classList.add("bg-light");
+        navbar.style.backgroundColor = "rgba(var(--bs-light-rgb),var(--bs-bg-opacity))";
+        bannerContent.style.color = "black";
+        navLinks.forEach(link => link.style.color = "black");
+        bannerChildren.forEach(child => child.style.color = "black");
+        svgs.forEach(svg => svg.setAttribute("fill", "black"));
+		menubutton.style.color = "black";
+    }
+});
+</script>
+<section id="billboard" class="bg-light">
+	<div id="detailwine">
+		<img src="https://winelist.seleccionxxi.com/imagenesapp/webp/DALMAU-MURRIETA.webp" alt="product">
+		<p id="imgprecio" style="text-align: center;">10.00€</p>
+	</div>
+    <div class="container" id="product_list">
+<div class="row">
+    <div class="swiper main-swiper py-4 swiper-initialized swiper-horizontal aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+        <div class="swiper-wrapper d-flex border-animation-left" id="swiper-wrapper-3512748835bff373" aria-live="polite" style="transform: translate3d(-622.4px, 0px, 0px); transition-duration: 0ms;">
+            <script>console.log('longitud: 25');</script>                <div data-referecia="1" data-product-id="0" class="swiper-slide" role="group" aria-label="1 / 25" data-swiper-slide-index="0" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(0, 'https://winelist.seleccionxxi.com/imagenesapp/webp/DALMAU-MURRIETA.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/DALMAU-MURRIETA.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Dalmau Murrieta <span style="color:#FFD700;">★</span></a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">11.50€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="5" data-product-id="1" class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 25" data-swiper-slide-index="1" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(1, 'https://winelist.seleccionxxi.com/imagenesapp/webp/MARQUES-MURRIETA-RESERVA.wwebp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/MARQUES-MURRIETA-RESERVA.wwebp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Marqués de Murrieta Reserva Magnum</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="6" data-product-id="2" class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 25" data-swiper-slide-index="2" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(2, 'https://winelist.seleccionxxi.com/imagenesapp/webp/MARQUES-MURRIETA-PREMIER-ROSE.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/MARQUES-MURRIETA-PREMIER-ROSE.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Marqués de Murrieta Primer Rosé</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="8" data-product-id="3" class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 25" data-swiper-slide-index="3" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(3, 'https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-FINCA-LAS-NAVES.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-FINCA-LAS-NAVES.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Ysios Finca Las Naves</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="9" data-product-id="4" class="swiper-slide" role="group" aria-label="5 / 25" data-swiper-slide-index="4" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(4, 'https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-LOS-PRADOS.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-LOS-PRADOS.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Ysios Los Prados</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="10" data-product-id="5" class="swiper-slide" role="group" aria-label="6 / 25" data-swiper-slide-index="5" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(5, 'https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-GRANO-A-GRANO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-GRANO-A-GRANO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Ysios Grano A Grano</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="11" data-product-id="6" class="swiper-slide" role="group" aria-label="7 / 25" data-swiper-slide-index="6" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(6, 'https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-BLANCO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-BLANCO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Ysios Blanco</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="12" data-product-id="7" class="swiper-slide" role="group" aria-label="8 / 25" data-swiper-slide-index="7" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(7, 'https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-SELECCION.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/YSIOS-SELECCION.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Ysios Selección</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="13" data-product-id="8" class="swiper-slide" role="group" aria-label="9 / 25" data-swiper-slide-index="8" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(8, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-COLECCION-PRIVADA-TINTO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-COLECCION-PRIVADA-TINTO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Colección Privada Tinto</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="14" data-product-id="9" class="swiper-slide" role="group" aria-label="10 / 25" data-swiper-slide-index="9" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(9, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-ORIGEN.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-ORIGEN.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Origen Crianza</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="15" data-product-id="10" class="swiper-slide" role="group" aria-label="11 / 25" data-swiper-slide-index="10" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(10, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-COLECCION-PRIVADA-ROSADO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-COLECCION-PRIVADA-ROSADO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Colección Privada Rosado</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="16" data-product-id="11" class="swiper-slide" role="group" aria-label="12 / 25" data-swiper-slide-index="11" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(11, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-COLECCION-PRIVADA-BLANCO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-COLECCION-PRIVADA-BLANCO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Colección Privada Blanco</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="17" data-product-id="12" class="swiper-slide" role="group" aria-label="13 / 25" data-swiper-slide-index="12" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(12, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-RESERVA.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-RESERVA.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Reserva</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="18" data-product-id="13" class="swiper-slide" role="group" aria-label="14 / 25" data-swiper-slide-index="13" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(13, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZCP12.wwebp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZCP12.wwebp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Crianza 3/8</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="19" data-product-id="14" class="swiper-slide" role="group" aria-label="15 / 25" data-swiper-slide-index="14" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(14, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-CRIANZA.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-CRIANZA.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Crianza</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="20" data-product-id="15" class="swiper-slide" role="group" aria-label="16 / 25" data-swiper-slide-index="15" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(15, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZM6.wwebp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZM6.wwebp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Crianza Magnum</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="21" data-product-id="16" class="swiper-slide" role="group" aria-label="17 / 25" data-swiper-slide-index="16" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(16, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-ROSADO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-ROSADO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Rosado</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="22" data-product-id="17" class="swiper-slide" role="group" aria-label="18 / 25" data-swiper-slide-index="17" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(17, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-BLANCO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-BLANCO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Blanco</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="23" data-product-id="18" class="swiper-slide" role="group" aria-label="19 / 25" data-swiper-slide-index="18" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(18, 'https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-INSTINTO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/AZPILICUETA-INSTINTO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Azpilicueta Instinto</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="24" data-product-id="19" class="swiper-slide" role="group" aria-label="20 / 25" data-swiper-slide-index="19" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(19, 'https://winelist.seleccionxxi.com/imagenesapp/webp/ALCORTA-AUDAZ.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/ALCORTA-AUDAZ.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Alcorta Audaz</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="25" data-product-id="20" class="swiper-slide" role="group" aria-label="21 / 25" data-swiper-slide-index="20" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(20, 'https://winelist.seleccionxxi.com/imagenesapp/webp/ALCORTA-AGIL.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/ALCORTA-AGIL.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Alcorta Ágil</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="26" data-product-id="21" class="swiper-slide" role="group" aria-label="22 / 25" data-swiper-slide-index="21" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(21, 'https://winelist.seleccionxxi.com/imagenesapp/webp/ALCORTA-ATREVIDO.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/ALCORTA-ATREVIDO.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Alcorta Atrevido</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="27" data-product-id="22" class="swiper-slide" role="group" aria-label="23 / 25" data-swiper-slide-index="22" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(22, 'https://winelist.seleccionxxi.com/imagenesapp/webp/MC-GAUDIUM.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/MC-GAUDIUM.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Gaudium</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">10.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="2" data-product-id="23" class="swiper-slide" role="group" aria-label="24 / 25" data-swiper-slide-index="23" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(23, 'https://winelist.seleccionxxi.com/imagenesapp/webp/CASTILLO-YGAY.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/CASTILLO-YGAY.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Castillo de Ygay</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">100.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div data-referecia="32" data-product-id="24" class="swiper-slide" role="group" aria-label="25 / 25" data-swiper-slide-index="24" style="width: 231.2px; display: block; margin-right: 80px;">
+                    <div class="banner-item image-zoom-effect">
+                        <div class="image-holder">
+                            <a href="#" onclick="openInfo(24, 'https://winelist.seleccionxxi.com/imagenesapp/webp/MC-CRIANZA.webp')">
+                                <img src="https://winelist.seleccionxxi.com/imagenesapp/webp/MC-CRIANZA.webp" alt="product" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="banner-content pt-1 pb-1">
+                            <h5 class="element-title text-uppercase">
+                                <a href="#" class="item-anchor">Marqués de Cáceres Crianza</a>
+                            </h5>
+                            <div class="btn-left">
+                                <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">100.00€</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+        <div class="swiper-pagination"></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+    <script>
+        var productData = [{"name":"Dalmau Murrieta","uvas":"Tempranillo, Cabernet Sauvignon, Graciano","elaborador":"Marqu\u00e9s de Murrieta","recomend":1,"stock":11,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"11.50","curiosidades":"Se lleva a cabo una vendimia manual seleccionada, en palots de pequen\u0303a capacidad para preservar la calidad de la uva. Cada variedad envejece por separado durante 20 meses en barricas de roble france\u0301s de Allier y tras el ensamblaje permanece 6 meses en depo\u0301sitos de hormigo\u0301n antes de su embotellad","notas":"Intensa y fragante nariz con apuntes de ar\u00e1ndanos, ciruela roja, tomillo, cedro y pimienta negra. Espl\u00e9ndido en boca, amplio\ufeff, bien definido y con un largo y sabroso final. Combinaci\u00f3n seductora de potencia y elegancia."},{"name":"Marqu\u00e9s de Murrieta Reserva Magnum","uvas":"Tempranillo, Garnacha tinta, Mazuelo, Graciano","elaborador":"Marqu\u00e9s de Murrieta","recomend":0,"stock":1,"tam":"150cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Es una muestra palpable de la elegancia, la solidez y la regularidad que caracterizan a la bodega Marqu\u00e9s de Murrieta. El vino muestra la incre\u00edble personalidad de la Finca Ygay y resume todo lo que en ella acontece durante un ciclo vegetativo.","notas":"Una expresiva nariz con m\u00faltiples capas de fruta roja, fresa, cereza y ciruela roja, notas de pimienta negra, s\u00e1ndalo, hierbas mediterr\u00e1neas, t\u00e9 rojo y toques de sutil crianza. Los taninos sedosos enmarcan un sabroso y fresco paso de boca y anticipan un e"},{"name":"Marqu\u00e9s de Murrieta Primer Ros\u00e9","uvas":"Mazuelo, L\u00edas","elaborador":"Marqu\u00e9s de Murrieta","recomend":0,"stock":1,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Rosado","precio":"10.00","curiosidades":"Alabado por la cr\u00edtica internacional, est\u00e1 posicionado en el p\u00f3dium de los rosados m\u00e1s prestigiosos. Es la \u00faltima joya de la bodega centenaria Marqu\u00e9s de Murrieta y naci\u00f3 en 2015 tras a\u00f1os de investigaci\u00f3n. Actualmente, es el \u00fanico rosado elaborado en Espa\u00f1a \u00edntegramente con uva mazuelo.","notas":"Semblante limpio y sutil que anticipa una serie de elegantes aromas de cereza, frambuesa y manzana roja, notas florales y un toque mineral. Expresivo, sabroso y de textura sedosa. Su vibrante frescura aporta equilibrio al delicado conjunto."},{"name":"Ysios Finca Las Naves","uvas":"Tempranillo, Garnacha, Graciano, Viura","elaborador":"Ysios","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Finca las Naves se vendimia de manera \u00fanica, toda la parcela a la vez y de forma manual, en cajas de 10kg. Se trata de un ensamblaje desde el origen, en campo, con todas las variedades plantadas en un vi\u00f1edo hist\u00f3rico. M\u00e1s tarde, se envejece durante 16 meses en un fudre de roble franc\u00e9s.","notas":"Una nariz intensa y atractiva con aromas a frutos silvestres y florales, junto con notas de hierbas de monte. En boca, presenta un paladar rico y denso con sabores precisos de frutas del bosque y florales, una textura fluida, fresco y muy elegante, culmin"},{"name":"Ysios Los Prados","uvas":"Tempranillo","elaborador":"Ysios","recomend":0,"stock":2,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Las vi\u00f1as se ubican en una zona con condiciones extremas debido a los fuertes vientos y a las bajas temperaturas, al pie de la Sierra Cantabria. De ah\u00ed es de donde procede esta producci\u00f3n limitada y exclusiva.","notas":"Intenso recuerdo de fruta negra, ciruela, regaliz, grosella, finas especias y notas minerales, acompa\u00f1ado de un lado floral que lo completa. En boca, presenta una buena estructura y frescura, siendo complejo y equilibrado, con suaves aromas tostados y toq"},{"name":"Ysios Grano A Grano","uvas":"Tempranillo","elaborador":"Ysios","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Merece la pena destacar la manera tan particular que siguen para seleccionar las uvas con las que elaboran este vino. Se trata de una jornada en la que todo el equipo de Ysios, desgranan manualmente -grano a grano- los racimos seleccionados para este vino.","notas":"Con un color cereza profundo y brillante, presenta un intenso aroma a fruta roja, con ligeros toques minerales. Su espl\u00e9ndida pureza y profundidad se complementan con una boca fresca, taninos finos y elegantes, y sutiles notas de madera. Culmina en un fin"},{"name":"Ysios Blanco","uvas":"Viura","elaborador":"Ysios","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Blanco","precio":"10.00","curiosidades":"Representa la expresi\u00f3n de las vi\u00f1as viejas de Viura que crecen en la parte m\u00e1s alta de alguno de los vi\u00f1edos, conocidas como \u201cCabezadas\u201d, respetando su original cultivo mixto junto con Tempranillo y que se benefician de suelos poco f\u00e9rtiles y poco profundos. Tras la fermentaci\u00f3n, el vino realiza un","notas":"Presenta un color amarillo pajizo brillante. En nariz, es intenso y perfumado, mostrando notas florales de acacia, frutas blancas, c\u00edtricos, y sutiles tostados de la crianza en barrica. En boca, tiene tensi\u00f3n y nervio con una agradable textura y complejid"},{"name":"Ysios Selecci\u00f3n","uvas":"Tempranillo","elaborador":"Ysios","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"El respeto por la herencia con una mentalidad vanguardista produce esta verdadera expresi\u00f3n de la Rioja Alavesa. La fermentaci\u00f3n de las diferentes parcelas se llev\u00f3 a cabo por separado en distintos dep\u00f3sitos, a temperaturas controladas, y fue seguida por un envejecimiento m\u00ednimo de 12 meses en barri","notas":"Este vino presenta un atractivo y v\u00edvido color rojo picota. En nariz, es intenso y perfumado, con predominio de frutas rojas y frutas del bosque, acompa\u00f1adas de ligeras notas de especias y toques minerales en gran equilibrio. En boca, es elegante y fresco"},{"name":"Azpilicueta Colecci\u00f3n Privada Tinto","uvas":"Tempranillo, Graciano, Mazuelo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Para la elaboraci\u00f3n de este vino, primero se estrujan y despalillan las uvas. Despu\u00e9s, el mosto fermenta a una temperatura controlada de 25\u00baC con una maceraci\u00f3n posterior que se alarga 15 d\u00edas. Finalizada la vinifiaci\u00f3n, pasa una crianza de 12 meses en barricas de roble franc\u00e9s nuevo.","notas":"Color rojo picota de magn\u00edfica intensidad. Anticipa una nariz perfumada, en la que predominan los recuerdos de abundante fruta roja, acompa\u00f1ada de suaves notas minerales, madera y especies. En boca se presenta potente, fresco y amplio, lleno de matices: f"},{"name":"Azpilicueta Origen Crianza","uvas":"Tempranillo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Con este vino se quiere recordar el inicio de Azpilicueta, evocar el momento en el que D. F\u00e9lix Azpilicueta Mart\u00ednez llega a Fuenmayor y se enamora de este lugar de la tierra, y decide fundar aqu\u00ed su bodega. Azpilicueta Origen es un monovarietal de tempranillo y ha sido criado en barricas de roble f","notas":"Nariz deliciosamente afrutada: cereza, ciruela, mora, ar\u00e1ndano, una leve nota de fresa\u2026 Si profundizamos encontraremos un lado floral, un poco de regaliz y especias. La crianza est\u00e1 tratada con sutileza, con elegancia, de forma que es un componente m\u00e1s de"},{"name":"Azpilicueta Colecci\u00f3n Privada Rosado","uvas":"Tempranillo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Rosado","precio":"10.00","curiosidades":"El mosto macera en fr\u00edo durante unas horas hasta alcanzar el color, aroma y textura deseados y fermenta en barricas de roble americano de tostado suave. A la fermentaci\u00f3n alcoh\u00f3lica sigue la crianza en barrica sobre sus l\u00edas durante meses, lo que aporta al vino gran elegancia, redondez y longitud en","notas":"Es un rosado deslumbrante, serio y complejo. De color rosa muy p\u00e1lido con un sutil reflejo cobrizo. En nariz se encuentra el aporte elegante de la madera, integrada entre las abundantes frutas rojas y los matices florales comedidos. Su boca es sedosa y co"},{"name":"Azpilicueta Colecci\u00f3n Privada Blanco","uvas":"Viura","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Blanco","precio":"10.00","curiosidades":"Para la elaboraci\u00f3n de este vino se utilizan 24 parcelas distribuidas por diferentes zonas de la denominaci\u00f3n de origen. Tras la vendimia y el transporte de los granos hasta la bodega, las distintas parcelas se vinifican por separado. Una vez realizados los primeros procesos, se obtienen los distint","notas":"De color pajizo, p\u00e1lido, sugerente. Vino de gran complejidad y elegancia, en el que se funden notas de c\u00edtricos con flores y fruta blanca, junto a boller\u00eda, tostados y trufa. Delicioso en boca con una longitud y cremosidad digna de ser disfrutada con dete"},{"name":"Azpilicueta Reserva","uvas":"Tempranillo, Graciano, Mazuelo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Las uvas proceden de un vi\u00f1edo que la bodega tiene en propiedad. Se trata de un terreno de m\u00e1s de 800 hect\u00e1reas, plantado en diversas altitudes y con distintas orientaciones. La composici\u00f3n de la vi\u00f1a hace que existan diversos microclimas en la plantaci\u00f3n y que, por lo tanto, un mismo fruto pueda te","notas":"Presenta un rojo rub\u00ed intenso con destellos de cer\u00e1mica a la vista. En nariz, tiene aromas sutiles a vainilla y membrillo. Suave, sedoso y de agradable persistencia. Su paladar es elegante y su cuerpo equilibrado y redondo."},{"name":"Azpilicueta Crianza 3\/8","uvas":"Tempranillo, Graciano, Mazuelo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"37,5cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"El vi\u00f1edo para este vino es diverso en topograf\u00eda, altitudes, suelos y orientaciones, lo que crea microclimas y expresiones \u00fanicas de las uvas. En cada cosecha, se seleccionan qu\u00e9 vi\u00f1edos ser\u00e1n cosechados. Es una mezcla de uvas que aportan tipicidad, aromas y frescura lo que lo convierte en vino apt","notas":"De color rojo cereza, de buena intensidad, vivaz con destellos dorados. Limpio y brillante. La nariz es perfumada donde destacan las notas de fruta, sobre un fondo de madera tostada y suaves aromas de vainilla, coco y especias."},{"name":"Azpilicueta Crianza","uvas":"Tempranillo, Graciano, Mazuelo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"El vi\u00f1edo para este vino es diverso en topograf\u00eda, altitudes, suelos y orientaciones, lo que crea microclimas y expresiones \u00fanicas de las uvas. En cada cosecha, se seleccionan qu\u00e9 vi\u00f1edos ser\u00e1n cosechados. Es una mezcla de uvas que aportan tipicidad, aromas y frescura lo que lo convierte en vino apt","notas":"De color rojo cereza, de buena intensidad, vivaz con destellos dorados. Limpio y brillante. La nariz es perfumada donde destacan las notas de fruta, sobre un fondo de madera tostada y suaves aromas de vainilla, coco y especias."},{"name":"Azpilicueta Crianza Magnum","uvas":"Tempranillo, Graciano, Mazuelo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"150cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"El vi\u00f1edo para este vino es diverso en topograf\u00eda, altitudes, suelos y orientaciones, lo que crea microclimas y expresiones \u00fanicas de las uvas. En cada cosecha, se seleccionan qu\u00e9 vi\u00f1edos ser\u00e1n cosechados. Es una mezcla de uvas que aportan tipicidad, aromas y frescura lo que lo convierte en vino apt","notas":"De color rojo cereza, de buena intensidad, vivaz con destellos dorados. Limpio y brillante. La nariz es perfumada donde destacan las notas de fruta, sobre un fondo de madera tostada y suaves aromas de vainilla, coco y especias."},{"name":"Azpilicueta Rosado","uvas":"Viura, Tempranillo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Rosado","precio":"10.00","curiosidades":"Las parcelas de este vino se sit\u00faan enteramente en la comarca de La Rioja Alta. Tras los correspondientes procesos de vendimia y ya en la bodega, los granos maceran en fr\u00edo durante unas horas. Posteriormente se obtiene el mosto por el m\u00e9todo del sangrado. Tras haberse limpiado el mosto, se efect\u00faa u","notas":"Este vino tiene un color rosa palo, p\u00e1lido y delicado. En nariz, ofrece un aroma intenso y exuberante con frutas tropicales como pi\u00f1a, c\u00edtricos como pomelo y lima, frutas de hueso fresco como albaricoque y guinda, y sutiles notas de mora y frambuesa. En b"},{"name":"Azpilicueta Blanco","uvas":"Viura","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Blanco","precio":"10.00","curiosidades":"Las uvas que cultiva la bodega se caracterizan por una baja graduaci\u00f3n de alcohol y una acidez bien equilibrada. Para su elaboraci\u00f3n se realiza una vinificaci\u00f3n convencional. La fermentaci\u00f3n se lleva a cabo en dep\u00f3sitos de acero inoxidable a temperatura controlada. Posteriormente el vino pasa una br","notas":"De color amarillo p\u00e1lido con reflejos verdosos. Su nariz sorprende por su intensidad de fruta en saz\u00f3n pareciendo manzana, pera, una pizca de pl\u00e1tano y refrescantes notas c\u00edtricas. Y tambi\u00e9n por sus flores blancas, de aromas dulces, melosos, que encajan a"},{"name":"Azpilicueta Instinto","uvas":"Tempranillo","elaborador":"Azpilicueta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Es vibrante y lleno de matices. Es un vino de autor que nace para rendir homenaje a la trayectoria y determinaci\u00f3n de F\u00e9lix Azpilicueta, un aut\u00e9ntico pionero. Se fermenta a temperatura controlada para potenciar y mantener la fruta.","notas":"Color muy atractivo, rojo intenso con reflejos viol\u00e1ceos. En nariz es franco y expresivo, predominan los frutos negros como ar\u00e1ndanos y mora, con leves notas de regaliz. De su crianza en barrica provienen aromas especiados y sutiles torrefactos. En boca e"},{"name":"Alcorta Audaz","uvas":"Tempranillo","elaborador":"Alcorta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Este vino realiza los normales procesos de vendimia y elaboraci\u00f3n siguiendo la tradici\u00f3n familiar y los conocimientos adquiridos durante a\u00f1os. Con este vino, la bodega consigue elaborar un crianza m\u00e1s afrutado y aterciopelado de lo habitual.","notas":"Es un tinto donde se despliega un abanico de aromas donde destacan frutas rojas maduras, como cerezas y ciruelas, entrelazadas con toques de vainilla y especias dulces, cortes\u00eda de su paso por barrica. En boca, se muestra vigoroso y pleno, con taninos sua"},{"name":"Alcorta \u00c1gil","uvas":"Tinta del Pa\u00eds","elaborador":"Alcorta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DO Ribera del Duero","tipo":"Tinto","precio":"10.00","curiosidades":"Alcorta es una colecci\u00f3n de vinos j\u00f3venes, frescos y afrutados de Campo Viejo, famosa bodega de la Rioja. Este vino tiene una peque\u00f1a crianza en barricas de roble franc\u00e9s y americano de unos 4 meses. As\u00ed consiguen preservar la expresi\u00f3n frutal que quieren transmitir al vino.","notas":"Es un tinto afrutado. En nariz es intenso y complejo, con fruta madura, toques tostados y especias. En boca es fresco, con cuerpo medio. Goloso y amplio. Con un tanino muy suave y sedoso, tiene un final persistente."},{"name":"Alcorta Atrevido","uvas":"Verdejo, Sauvignon Blanc","elaborador":"Alcorta","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DO Rueda","tipo":"Blanco","precio":"10.00","curiosidades":"Est\u00e1 elaborado a baja temperatura para preservar mejor los aromas frutales y florales de la uva. La verdejo aporta herb\u00e1ceos y c\u00edtricos, la Sauvignon Blanc la parte m\u00e1s floral, c\u00edtrica y tropical y la Viura la frescura en boca. El vi\u00f1edo est\u00e1 situado en la meseta castellana, donde hay un gran interv","notas":"Es un vino blanco potente donde se perciben claramente las notas de flores blancas, lim\u00f3n y maracuy\u00e1. Al probarlo, su ligereza se hace presente con una entrada suave y un final que sorprende con un sutil toque amargo. Este vino blanco joven es ideal para "},{"name":"Gaudium","uvas":"Tempranillo, Graciano ","elaborador":"Marqu\u00e9s de C\u00e1ceres","recomend":0,"stock":10,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"10.00","curiosidades":"Es un gran vino tinto, exclusivamente elaborado en a\u00f1adas excelentes de viej\u00edsimos vi\u00f1edos, toda una joya para el disfrute de cualquier amante del vino. Mediante una minuciosa selecci\u00f3n manual de racimo a racimo se consigue este exquisito vino, despu\u00e9s de 18 meses en barricas nuevas de roble franc\u00e9s","notas":"Vino de color rub\u00ed oscuro con reflejos brillantes, destacando su intensidad, complejidad y profundidad. Madurado en roble de grano fino, presenta notas tostadas y especiadas. Su sabor es rico y elegante, con matices de ciruela negra, tomillo y bals\u00e1micos."},{"name":"Castillo de Ygay","uvas":"Tempranillo, Mazuelo","elaborador":"Marqu\u00e9s de Murrieta","recomend":0,"stock":1,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"100.00","curiosidades":"Parte de su grandeza reside en el hecho de que solamente se elabora en a\u00f1adas consideradas excepcionales. De rotunda calidad y elegancia, ha desarrollado una gran complejidad a lo largo de los a\u00f1os sin perder su excepcional frescura. ","notas":"Una nariz plena y compleja, con aromas de picota y ciruela madura que cubren notas de hojas de t\u00e9, cedro y hierbas mediterr\u00e1neas sobre un fondo de flores secas. Definido y profundo en boca, con taninos pulidos y lleno de matices, armonioso y de larga vida"},{"name":"Marqu\u00e9s de C\u00e1ceres Crianza","uvas":"Tempranillo, Garnacha tinta, Graciano","elaborador":"Marqu\u00e9s de C\u00e1ceres","recomend":0,"stock":1,"tam":"75cl","pais":"Espa\u00f1a","region":"DOCa Rioja","tipo":"Tinto","precio":"100.00","curiosidades":"El vino se elabora de manera meticulosa, comenzando con el despalillado cuidadoso de los racimos antes de la fermentaci\u00f3n alcoh\u00f3lica. La fermentaci\u00f3n malol\u00e1ctica se completa en una combinaci\u00f3n de barricas nuevas y dep\u00f3sitos de acero inoxidable, dependiendo de las parcelas y zonas de origen. Posterio","notas":"El vino presenta un color rub\u00ed con intensidad media. En nariz, ofrece profundos aromas de fruta negra combinados con toques bals\u00e1micos, mostrando una armon\u00eda bien integrada. En boca, se perciben suaves notas de cuero y un toque mentolado que aporta frescu"}];
+        console.log("Product Data:", productData);
+    </script>
+
+    <div class="icon-arrow icon-arrow-left" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-3512748835bff373">
+        <svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-left"></use>
+        </svg>
+    </div>
+
+    <div class="icon-arrow icon-arrow-right" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-3512748835bff373">
+        <svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-right"></use>
+        </svg>
+    </div>
+</div>
+	</div>
+
+  </section>
+  <div class="background2" id="floorimage">
+		<img loading="lazy" src="https://winelist.seleccionxxi.com/selector/images/floorirene1.png" alt="user" width="1186" height="330" style="
+    width: 100%;
+">
+	</div>
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function openInfo(slide,imageSrc) {
+    // Ensure the data exists in the array
+    if (!productData[slide]) {
+        console.error("Invalid slide index:", slide);
+        return;
+    }
+
+    // Get the product data
+    let product = productData[slide];
+
+    // Show and update the necessary elements
+    document.getElementById("infoSidenav").style.width = "70vw";
+    document.getElementById("product_list").style.display = "none";
+    document.getElementById("detailwine").style.display = "block";
+
+    // Fill the content with the corresponding product details
+    document.getElementById("dato-nombre").textContent = product.name;
+    document.getElementById("dato-tipo").textContent = product.tipo;
+    document.getElementById("dato-uvas").textContent = product.uvas;
+    document.getElementById("dato-region").textContent = product.region;
+    document.getElementById("dato-pais").textContent = product.pais;
+    document.getElementById("dato-elaborador").textContent = product.elaborador;
+    document.getElementById("curiosidades").textContent = product.curiosidades;
+    document.getElementById("notas").textContent = product.notas;
+    
+	let detailImage = document.getElementById("detailwine").querySelector("img");
+    if (detailImage) {
+        detailImage.src = imageSrc; // Swap image source
+    }
+
+    // Set the product ID for form submission
+    document.getElementById("productopedido").value = slide;
+}
+
+function closeInfo() {
+  document.getElementById("infoSidenav").style.width = "0";
+  document.getElementById("product_list").style.display = "";
+  document.getElementById("detailwine").style.display = "none";
+}
+function updatePrice(value) 
+{
+	document.getElementById("priceValue").textContent = value;
+}
+function updatePrice2(value) 
+{
+	document.getElementById("priceValue2").textContent = value;
+}
+</script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
